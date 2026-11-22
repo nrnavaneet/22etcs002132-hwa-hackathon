@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Breeze is a calm, fast daily planner that helps you focus on what matters.">
+  <meta name="theme-color" content="#f5f2ea">
+  <title>Breeze — Make space for what matters</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Breeze home"><span class="brand-mark">b</span>breeze</a>
+    <nav aria-label="Main navigation">
+      <a href="#how">How it works</a>
+      <a href="#start">Get started</a>
+    </nav>
+    <a class="button button-small" href="#start">Try for free</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> A calmer way to plan</p>
+        <h1>Make space for<br><em>what matters.</em></h1>
+        <p class="lead">Breeze turns your busy brain into one clear plan. Capture a task, find your focus, and move through your day without the clutter.</p>
+        <div class="hero-actions">
+          <a class="button" href="#start">Start your free day <span>→</span></a>
+          <span class="note">No card. No clutter.</span>
+        </div>
+        <div class="proof">
+          <div class="avatars" aria-hidden="true"><i>M</i><i>J</i><i>A</i></div>
+          <p><strong>12,000+ focused days</strong><br>made a little lighter</p>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Breeze planner preview">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="planner-card">
+          <div class="planner-top">
+            <div><small>MONDAY, MAY 12</small><h2>Good morning, Maya.</h2></div>
+            <span class="weather">21° Clear</span>
+          </div>
+          <div class="focus-label">TODAY'S FOCUS</div>
+          <div class="focus-item"><span class="check checked">✓</span><div><strong>Finish launch concept</strong><small>Design · 45 min</small></div><span class="dot coral"></span></div>
+          <div class="focus-item"><span class="check"></span><div><strong>Call Mom</strong><small>Personal · 20 min</small></div><span class="dot blue"></span></div>
+          <div class="focus-item faded"><span class="check"></span><div><strong>Write weekly notes</strong><small>Work · 30 min</small></div><span class="dot yellow"></span></div>
+          <div class="add-task"><span>+</span> Add something…</div>
+          <div class="progress">
+            <div><span>Daily progress</span><strong>2 of 3</strong></div>
+            <div class="progress-track"><i></i></div>
+          </div>
+        </div>
+        <div class="float-note"><span>B</span><div><strong>Deep focus</strong><small>42 min uninterrupted</small></div></div>
+      </div>
+    </section>
+
+    <section class="features" id="how">
+      <p class="eyebrow centered"><span></span> Simple by design</p>
+      <h2 class="section-title">Less managing.<br><em>More doing.</em></h2>
+      <div class="feature-grid">
+        <article><span class="number">01</span><h3>Capture quickly</h3><p>Add a thought in seconds. Breeze organizes the details, so you can keep moving.</p></article>
+        <article><span class="number">02</span><h3>Focus gently</h3><p>See the next right thing without timelines, streaks, or productivity pressure.</p></article>
+        <article><span class="number">03</span><h3>Close the day</h3><p>Reflect on what moved forward and let tomorrow begin with a clean slate.</p></article>
+      </div>
+    </section>
+
+    <section class="start-section" id="start">
+      <div>
+        <p class="eyebrow light"><span></span> Your day, lighter</p>
+        <h2>One clear day<br>starts right here.</h2>
+      </div>
+      <form id="planner-form" class="quick-plan">
+        <label for="task">What would you like to move forward?</label>
+        <div class="input-row">
+          <input id="task" name="task" type="text" placeholder="Add one thing…" maxlength="80" required autocomplete="off">
+          <button class="button light-button" type="submit">Add to my day <span>→</span></button>
+        </div>
+        <p id="message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark">b</span>breeze</a><p>Make room for a meaningful day.</p><span>© 2026 Breeze</span></footer>
+</body>
+</html>
